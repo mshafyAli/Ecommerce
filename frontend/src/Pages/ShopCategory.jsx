@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import "./CSS/ShopCategory.css"
-// import all_product from '../Components/Assets/all_product'
+
 import dropdown_icon from '../Components/Assets/dropdown_icon.png'
-import { ShopContext } from '../Context/ShopCategory'
+import { ShopContext } from '../Context/ShopContext'
 import Item from '../Components/Item/Item'
 
 const ShopCategory = (props) => {
@@ -27,7 +27,7 @@ const ShopCategory = (props) => {
           return null;
         }
 
-        // {props.category === item.category ?<Item key={i} id={item.id}  name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} /> : null}
+        
        })}
       </div>
       <div className='shopCategory-loadmore'>
